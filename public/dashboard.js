@@ -185,9 +185,17 @@ function createDashboard() {
     var anchor = document.getElementById('leaderAnchor');
     anchor.innerHTML = "";
     map.clear();
+    var users = document.getElementById('numberOfParticipants');
+    users.innerHTML = "";
+    var steps = document.getElementById('numberOfSteps');
+    steps.innerHTML = "";
+    var devices = document.getElementById('totalDevices');
+    devices.innerHTML = "";
+    var distance = document.getElementById('distanceWalked');
+    distance.innerHTML = "";
     getStandingData();
+    getTotalUsers();
+    getTotalSteps();
+    getTotalDevices();
   },10000);
-  getTotalUsers();
-  getTotalSteps();
-  getTotalDevices();
 }
